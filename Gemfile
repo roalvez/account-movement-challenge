@@ -24,6 +24,7 @@ end
 
 group :test do
   gem 'factory_bot_rails', '~> 5.1.1'
+  gem 'faker', '2.11.0'
   gem 'shoulda-matchers', '~> 4.2.0'
   gem 'rspec-rails', '~> 3.9.0'
 end
