@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) { |repo| 'https://github.com/#{repo}.git' }
 
 ruby '2.6.5'
 
@@ -11,8 +11,9 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry', '0.13.0'
-  gem "rubocop-performance", "~> 1.5.2", require: false
-  gem "rubocop-rails", "~> 2.4.2", require: false
+  gem 'rubocop-performance', '~> 1.5.2', require: false
+  gem 'rubocop-rails', '~> 2.4.2', require: false
+  gem 'rubocop-rspec', '~> 1.38.0', require: false
 end
 
 group :development do
@@ -22,7 +23,7 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails', "~> 3.9.0"
+  gem 'rspec-rails', '~> 3.9.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
