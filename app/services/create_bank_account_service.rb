@@ -1,4 +1,4 @@
-require "csv"
+require 'csv'
 
 class CreateBankAccountService < ServiceBase
   attr_reader :accounts_file

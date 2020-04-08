@@ -7,7 +7,7 @@ class BankAccount < ApplicationRecord
   private
 
   def negative_balance_penalty
-    return if self.balance >= 0
+    return if balance >= 0
 
     self.balance -= 300
   end
