@@ -10,6 +10,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry', '0.13.0'
   gem "rubocop-performance", "~> 1.5.2", require: false
   gem "rubocop-rails", "~> 2.4.2", require: false
 end
