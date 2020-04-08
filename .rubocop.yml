@@ -1,0 +1,43 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+  - "bin/**/*"
+  - "db/**/*"
+  - "lib/tasks/**/*"
+  - "log/**/*"
+  - "public/**/*"
+  - "config/**/*"
+  - "storage/**/*"
+  - "tmp/**/*"
+  - "vendor/**/*"
+  - "Gemfile"
+  - "Rakefile"
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+  IndentationWidth: 2
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Rails/Output:
+  Enabled: false
+
+
