@@ -16,8 +16,6 @@ class ShowBankAccountService < ServiceBase
   end
 
   def display_accounts
-    bank_accounts = BankAccount.all
-
     return no_accounts_message unless bank_accounts.any?
 
     display_each_account(bank_accounts)
