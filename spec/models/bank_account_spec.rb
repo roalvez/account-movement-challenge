@@ -20,7 +20,7 @@ RSpec.describe BankAccount do
         bank_account.update(balance: -1700)
       end
 
-      it "adds penalty price to balance" do
+      it 'adds penalty price to balance' do
         expect(bank_account.balance).to eq(-2000)
       end
     end
