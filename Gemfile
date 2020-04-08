@@ -23,6 +23,7 @@ group :development do
 end
 
 group :test do
+  gem 'shoulda-matchers', '~> 4.2.0'
   gem 'rspec-rails', '~> 3.9.0'
 end
 
